@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-public/models
+# public/models
 dist
 dist-ssr
 *.local
