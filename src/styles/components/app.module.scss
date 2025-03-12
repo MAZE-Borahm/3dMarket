@@ -1,0 +1,53 @@
+.header-container {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../../assets/imgs/header-background.webp");
+  background-size: cover; /* 컨테이너에 맞게 이미지 크기 조절 */
+  background-position: center; /* 이미지 중앙 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 없음 */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.625rem 0;
+  gap: 1.5rem;
+  background-color: $color-black-4;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  button {
+    background-color: $color-text-white;
+    padding: 0.375rem 1.125rem;
+    border: 0.0938rem solid $color-black-8;
+    border-radius: 0.8438rem;
+  }
+}
+
+.body-section {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0;
+}
+
+.card-list-container {
+  width: 360px;
+
+  .card-container {
+    border-radius: 1.125rem;
+    box-shadow: 0px 1px 3px rgba(190, 190, 190, 0.3), 0px 6px 10px rgba(180, 180, 180, 0.15),
+      0px 12px 20px rgba(170, 170, 170, 0.1) !important;
+  }
+  .card-header {
+    background-color: $color-text-white !important;
+    border-bottom: 0.0938rem dashed $color-black-12;
+  }
+  .card-body {
+  }
+
+  .card-footer {
+    border-top: 0.0938rem dashed $color-black-12;
+  }
+}

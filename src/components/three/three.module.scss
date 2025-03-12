@@ -1,0 +1,178 @@
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 캔버스가 전체 화면을 차지하도록 설정 */
+.canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+/* 정보 패널 스타일링 */
+.info-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.info-panel h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-panel h3 {
+  margin: 15px 0 10px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.info-panel p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* 모드 전환 버튼 스타일 */
+.mode-toggle {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.mode-button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.mode-button.multi {
+  background: #9c27b0;
+}
+
+.mode-button.single {
+  background: #2196f3;
+}
+
+.mode-button:hover {
+  filter: brightness(1.1);
+}
+
+.mode-desc {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* 좌표 테이블 스타일 */
+.coordinates table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.coordinates td {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.coordinates td:first-child {
+  width: 30%;
+  font-weight: bold;
+  color: #333;
+}
+
+.coordinates td:last-child {
+  text-align: right;
+  font-family: monospace;
+  font-size: 16px;
+  color: #d0021b;
+}
+
+/* 구체 목록 스타일 */
+.spheres-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.sphere-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.sphere-item:last-child {
+  border-bottom: none;
+}
+
+.sphere-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.sphere-coords {
+  flex-grow: 1;
+  font-family: monospace;
+  font-size: 12px;
+  color: #333;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.remove-button:hover {
+  color: #d32f2f;
+}
+
+/* 리셋 버튼 */
+.action-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.action-button:hover {
+  background: #388e3c;
+}
