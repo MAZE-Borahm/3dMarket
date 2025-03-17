@@ -112,7 +112,14 @@ const ThreeApp: React.FC = () => {
 
       {/* Three.js 캔버스 */}
       <Canvas shadows camera={{ position: [3, 3, 3], fov: 50 }} className={styles.canvas}>
-        <Scene multiMode={multiMode} singleSphere={singleSphere} multiSpheres={multiSpheres} onUpdateSpherePosition={updateSpherePosition} onAddSphere={addSphere} modelUrl='/models/example.glb' />
+        <Scene
+          multiMode={multiMode}
+          singleSphere={singleSphere}
+          multiSpheres={multiSpheres}
+          onUpdateSpherePosition={updateSpherePosition}
+          onAddSphere={addSphere}
+          modelUrl='/models/acceptCoffee.glb'
+        />
       </Canvas>
     </div>
   )
